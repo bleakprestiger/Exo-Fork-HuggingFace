@@ -38,7 +38,7 @@ def try_parse_tool_calls(content: str):
 def chat_completion(messages):
   """Send chat completion request to local server"""
   response = requests.post(
-    "http://localhost:52415/v1/chat/completions",
+    "http://localhost:7860/v1/chat/completions",
     json={
       "model": "qwen-2.5-1.5b",
       "messages": messages,

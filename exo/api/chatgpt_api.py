@@ -593,7 +593,7 @@ class ChatGPTAPI:
         status=500
       )
 
-  async def run(self, host: str = "0.0.0.0", port: int = 52415):
+  async def run(self, host: str = "0.0.0.0", port: int = 7860):
     runner = web.AppRunner(self.app)
     await runner.setup()
     site = web.TCPSite(runner, host, port)
